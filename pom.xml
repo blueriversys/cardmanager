@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>blueriver</groupId>
+  <artifactId>cardmanager</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>com.jolira</groupId>
+        <artifactId>onejar-maven-plugin</artifactId>
+        <version>1.4.4</version>
+        <executions>
+          <execution>
+            <configuration>
+                <mainClass>com.blueriver.main.CardManager</mainClass>
+                <onejarVersion>0.97</onejarVersion>
+                <attachToBuild>true</attachToBuild>
+                <!-- <filename>${project.artifactId}-${project.version}.${project.packaging}</filename> -->
+                <filename>manager-${project.version}.${project.packaging}</filename>
+            </configuration>
+            <goals>
+                <goal>one-jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.2</version> <!-- or whatever current version -->
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+  
+</project>
