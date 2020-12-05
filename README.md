@@ -25,7 +25,9 @@ To get a usage description, issue this command:
 <br>
 C:\cardmanager>java -jar target\manager-0.0.1-SNAPSHOT.jar -help
 <br>
+<br>
 Which results in this:
+<br>
 <br>
 usage: program <options>
 <br>
@@ -50,7 +52,8 @@ To store a file on the card, issue this:
 <br>
 C:\cardmanager>java -jar target\manager-0.0.1-SNAPSHOT.jar -add,c:\myfolder\file.txt,cardfile
 <br>
-where "cardfile" is the name by which the file will be recognized in the file (max 28 characters for this name).
+where "cardfile" is the name by which the file will be recognized in the card (max 28 characters for this name).
+<br>
 <br>
 Later, to retrieve that file from the card, issue this:
 <br>
