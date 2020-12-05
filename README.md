@@ -57,7 +57,7 @@ where "cardfile" is the name by which the file will be recognized in the card (m
 <br>
 Later, to retrieve that file from the card, issue this:
 <br>
-program -retrieve,c:\myfolder\file.txt,cardfile,<password>
+C:\cardmanager>java -jar target\manager-0.0.1-SNAPSHOT.jar -retrieve,c:\myfolder\file.txt,cardfile,<password>
 <br>
 where "cardfile" is the name you used when you stored the file in the card. This command requires password, which you set when you issued the init comand.
 
